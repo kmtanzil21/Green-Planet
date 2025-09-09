@@ -1,0 +1,9 @@
+1.The scope and mutability of var, let, and const are where they diverge most. Var is accessible throughout the function and can be updated and re-declared within the same scope because it has function scope. In contrast, let has block scope, which restricts its accessibility to the block in which it is defined. It can be modified, but it cannot be re-declared inside the same block. In contrast to let in, const has a block scope and cannot be reassigned or re-declared after it has been assigned.
+
+2.The way that map(), forEach(), and filter() work with arrays is where they diverge most. While forEach() performs a function on each element but does not provide a value, map() generates a new array by applying a function to each element in the original array. Only the components that meet a criterion given in the callback function are included in the new array that filter() generates.
+
+3.A more condensed syntax for writing functions is provided via arrow functions, which were first introduced in ES6. They are particularly helpful when working with functions inside objects or when handling events, when this behaviour can be challenging with regular functions, because they instantly connect the keyword to the surrounding context.
+
+4.In ES6, destructuring assignment makes it possible to extract values from arrays or objects in a more concise manner. Destructuring allows you to assign several variables in a single sentence rather than accessing each value separately, which makes the code less repetitious and easier to read.
+
+5.In ES6, template literals enable the creation of strings with embedded expressions using ${} that span many lines. Compared to standard string concatenation, which usually calls for several + operators to join strings and variables, this is more adaptable and readable. Additionally, template literals facilitate dynamic string formatting.
