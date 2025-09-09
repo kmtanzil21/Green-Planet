@@ -42,6 +42,38 @@
 </div>
 
 
+<!-- Main Content -->
+<div class="w-11/12 mx-auto flex gap-6 bg-green-100 py-6 rounded-lg mt-6 min-h-[600px]">
+
+   <!-- Categories Sidebar -->
+  <div class="w-1/5 px-2">
+    <div class="font-bold text-xl mb-3">Categories</div>
+    <button id="category-all" onclick="handleCategoryClick(0)"
+      class="category-btn block w-full text-left px-4 py-2 rounded font-medium mb-1 bg-green-600 text-white hover:bg-green-700 transition-colors">All Trees</button>
+    <div id="categories" class="flex flex-col space-y-1"></div>
+  </div>
+
+  <!-- Tree Cards Grid -->
+  <div id="tree-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-3/5 min-h-[500px]">
+    <div id="loading-spinner" class="col-span-full flex justify-center items-center">
+      <span class="loading loading-dots loading-lg text-green-600"></span>
+    </div>
+  </div>
+
+  <!-- Cart Panel -->
+  <div class="w-1/5 bg-white rounded-lg shadow p-4 flex flex-col h-auto">
+    <div class="font-bold text-xl mb-3">Your Cart</div>
+    <div class="border-b border-green-200 pb-2 flex justify-between font-semibold text-lg mb-3">
+      <span>Total:</span>
+      <span id="cart-total">৳0</span>
+    </div>
+    <div id="cart-items" class="flex flex-col gap-2 max-h-[400px] overflow-y-auto"></div>
+    <div id="empty-cart" class="text-center text-gray-500 py-4">Your cart is empty</div>
+  </div>
+</div>
+
+
+
 </body>
 
 </html>
